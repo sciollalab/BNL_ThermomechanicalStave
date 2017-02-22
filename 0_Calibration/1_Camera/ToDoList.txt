@@ -1,0 +1,3 @@
+- automated pixel-to-micron conversion
+- automated calculation of transformation between camera and xyz stage bases (angle)
+- automated focusing (including calculating change in pixel-to-micron conversion with height)
