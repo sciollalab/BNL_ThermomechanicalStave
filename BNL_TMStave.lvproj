@@ -147,14 +147,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="File2Array (SubVI).vi" Type="VI" URL="../SubVIs/File2Array (SubVI).vi"/>
 			<Item Name="GenerateListOfCoordintes (SubVI).vi" Type="VI" URL="../SubVIs/GenerateListOfCoordintes (SubVI).vi"/>
-			<Item Name="HomeAllAxes (SubVI).vi" Type="VI" URL="../SubVIs/HomeAllAxes (SubVI).vi"/>
-			<Item Name="Connect.vi" Type="VI" URL="../Initialize/Connect.vi"/>
-			<Item Name="Go2XYZ (SubVI).vi" Type="VI" URL="../SubVIs/Go2XYZ (SubVI).vi"/>
-			<Item Name="Disconnect.vi" Type="VI" URL="../Initialize/Disconnect.vi"/>
-			<Item Name="DrawImageCentre (SubVI).vi" Type="VI" URL="../SubVIs/DrawImageCentre (SubVI).vi"/>
-			<Item Name="SaveImagesFromArray (SubVI).vi" Type="VI" URL="../SubVIs/SaveImagesFromArray (SubVI).vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
