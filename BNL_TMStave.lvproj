@@ -25,6 +25,8 @@
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="BuildThermomechanicalStave.vi" Type="VI" URL="../BuildThermomechanicalStave.vi"/>
+		<Item Name="TESTJOG.vi" Type="VI" URL="../../../Desktop/TESTJOG.vi"/>
+		<Item Name="testbaby (SubVI).vi" Type="VI" URL="../../../Desktop/testbaby (SubVI).vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
