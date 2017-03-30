@@ -149,6 +149,11 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
+			<Item Name="MoveAbs.vi" Type="VI" URL="../0_Calibration/Motion/MoveAbs.vi"/>
+			<Item Name="MoveAbsMultiple.vi" Type="VI" URL="../0_Calibration/Motion/MoveAbsMultiple.vi"/>
+			<Item Name="Wait.vi" Type="VI" URL="../0_Calibration/Motion/Wait.vi"/>
+			<Item Name="WaitMultiple.vi" Type="VI" URL="../0_Calibration/Motion/WaitMultiple.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
