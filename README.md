@@ -10,3 +10,4 @@ Required LabVIEW software packages:
 - LabVIEW Full Development System 
 - NI Vision VAS 2016
 - NI Vision VDM 2016
+- NI 488.2 Driver
