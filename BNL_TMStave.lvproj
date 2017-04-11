@@ -137,7 +137,9 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="AverageXYZ (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/AverageXYZ (SubVI).vi"/>
+			<Item Name="ConfigureLights (SubVI).vi" Type="VI" URL="../Utils/Lighting/ConfigureLights (SubVI).vi"/>
 			<Item Name="FindTopAndBottomEdges (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/FindTopAndBottomEdges (SubVI).vi"/>
+			<Item Name="LightSwitch (SubVI).vi" Type="VI" URL="../Utils/Lighting/LightSwitch (SubVI).vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -152,6 +154,7 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="TemplateImageToTopEdge (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/TemplateImageToTopEdge (SubVI).vi"/>
+			<Item Name="TimeAndTemperature (SubVI).vi" Type="VI" URL="../Utils/TimeAndTemperature (SubVI).vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
