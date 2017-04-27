@@ -151,7 +151,6 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="AverageXYZ (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/AverageXYZ (SubVI).vi"/>
-			<Item Name="FeedTest.vi" Type="VI" URL="../Utils/FeedTest.vi"/>
 			<Item Name="FindTopAndBottomEdges (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/FindTopAndBottomEdges (SubVI).vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
