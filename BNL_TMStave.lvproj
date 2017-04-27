@@ -164,7 +164,6 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="SingleModuleProgressReport.ctl" Type="VI" URL="../1_ModulePlacement/2_ModulePositioning/SingleModuleProgressReport.ctl"/>
 			<Item Name="SubVI_AutoscaleSliderToImageSize.vi" Type="VI" URL="../Utils/Standalone/SubVI_AutoscaleSliderToImageSize.vi"/>
 			<Item Name="SubVI_UserSliderCursor.vi" Type="VI" URL="../Utils/Standalone/SubVI_UserSliderCursor.vi"/>
 			<Item Name="TemplateImageToTopEdge (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/TemplateImageToTopEdge (SubVI).vi"/>
