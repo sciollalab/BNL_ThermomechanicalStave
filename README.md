@@ -11,3 +11,4 @@ Required LabVIEW software packages:
 - NI Vision VAS 2016
 - NI Vision VDM 2016
 - NI 488.2 Driver
+- LabVIEW Interface for Arduino 2.2.0.79 (through NI Package Manager)
