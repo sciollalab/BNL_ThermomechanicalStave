@@ -171,7 +171,11 @@
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.LabVIEW.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.LabVIEW.dll"/>
 			<Item Name="AverageXYZ (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/AverageXYZ (SubVI).vi"/>
+			<Item Name="CollectImageSet (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Image Utilities/CollectImageSet (SubVI).vi"/>
+			<Item Name="FetchImageSet (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Image Utilities/FetchImageSet (SubVI).vi"/>
 			<Item Name="FindTopAndBottomEdges (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/FindTopAndBottomEdges (SubVI).vi"/>
+			<Item Name="FindWorkingZDistance.vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Autofocusing Utilities/FindWorkingZDistance.vi"/>
+			<Item Name="Format Geometric Patterns Results (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Pixel-Micron Calibration Utilities/Format Geometric Patterns Results (SubVI).vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -186,6 +190,7 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Overlay Geometric Pattern Matching Results.vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Overlay Utilities/Overlay Geometric Pattern Matching Results.vi"/>
 			<Item Name="SubVI_AutoscaleSliderToImageSize.vi" Type="VI" URL="../Utils/Standalone/SubVI_AutoscaleSliderToImageSize.vi"/>
 			<Item Name="SubVI_UserSliderCursor.vi" Type="VI" URL="../Utils/Standalone/SubVI_UserSliderCursor.vi"/>
 			<Item Name="TemplateImageToTopEdge (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/TemplateImageToTopEdge (SubVI).vi"/>
