@@ -169,6 +169,8 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../../../sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../../../sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNLStaveAssembly-Blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.LabVIEW.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.LabVIEW.dll"/>
 			<Item Name="AverageXYZ (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/AverageXYZ (SubVI).vi"/>
 			<Item Name="CollectImageSet (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Image Utilities/CollectImageSet (SubVI).vi"/>
