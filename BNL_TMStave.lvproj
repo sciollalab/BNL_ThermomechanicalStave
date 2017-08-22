@@ -139,6 +139,7 @@
 				<Item Name="Read Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Delimited Spreadsheet.vi"/>
 				<Item Name="Read File+ (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read File+ (string).vi"/>
 				<Item Name="Read Lines From File (with error IO).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Read Lines From File (with error IO).vi"/>
+				<Item Name="RGB to Color.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/colorconv.llb/RGB to Color.vi"/>
 				<Item Name="ROI Descriptor" Type="VI" URL="/&lt;vilib&gt;/vision/Image Controls.llb/ROI Descriptor"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi"/>
@@ -168,16 +169,23 @@
 				<Item Name="Write JPEG File.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Write JPEG File.vi"/>
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 			</Item>
+			<Item Name="0_HomeAllAxes (SubVI).vi" Type="VI" URL="../BNL_ThermomechanicalStave/0_Calibration/0_XYZStage/0_HomeAllAxes (SubVI).vi"/>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../../../sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../../../sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNLStaveAssembly-Blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.LabVIEW.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.LabVIEW.dll"/>
 			<Item Name="AverageXYZ (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/AverageXYZ (SubVI).vi"/>
+			<Item Name="CalibrateDistanceCameraSyringe.vi" Type="VI" URL="../BNL_ThermomechanicalStave/1_ModulePlacement/1_GluePatterning/CalibrateDistanceCameraSyringe.vi"/>
 			<Item Name="CollectImageSet (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Image Utilities/CollectImageSet (SubVI).vi"/>
+			<Item Name="Connect.vi" Type="VI" URL="../BNL_ThermomechanicalStave/AerotechLibraries/Initialize/Connect.vi"/>
+			<Item Name="EnableMultiple.vi" Type="VI" URL="../BNL_ThermomechanicalStave/AerotechLibraries/Motion/EnableMultiple.vi"/>
+			<Item Name="Enum_TypeDef_TapeType.ctl" Type="VI" URL="../BNL_ThermomechanicalStave/Utils/Enum_TypeDefinitions/Enum_TypeDef_TapeType.ctl"/>
 			<Item Name="FetchImageSet (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Image Utilities/FetchImageSet (SubVI).vi"/>
 			<Item Name="FindTopAndBottomEdges (SubVI).vi" Type="VI" URL="../0_Calibration/2_StaveCoordinateSystem/FindTopAndBottomEdges (SubVI).vi"/>
 			<Item Name="FindWorkingZDistance.vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Autofocusing Utilities/FindWorkingZDistance.vi"/>
 			<Item Name="Format Geometric Patterns Results (SubVI).vi" Type="VI" URL="../0_Calibration/1_Camera/v1CameraCalibration/Pixel-Micron Calibration Utilities/Format Geometric Patterns Results (SubVI).vi"/>
+			<Item Name="GetCurrentXYZPosition (SubVI).vi" Type="VI" URL="../BNL_ThermomechanicalStave/0_Calibration/0_XYZStage/GetCurrentXYZPosition (SubVI).vi"/>
+			<Item Name="Go2XYZ (SubVI).vi" Type="VI" URL="../BNL_ThermomechanicalStave/0_Calibration/0_XYZStage/Go2XYZ (SubVI).vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
