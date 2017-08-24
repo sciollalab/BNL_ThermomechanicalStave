@@ -1,0 +1,60 @@
+Core concept:  Given an image containing a periodic, repeating pattern, fast fourier transform can be used to detect the angle of skew.
+
+-----
+Design Philosophy:  
+
+This VI should work correctly under normal conditions with little input or configuration from the user. 
+
+If necessary, this SubVI can be opened during operation to display several tabs of debugging information as well as editable parameters.
+
+This SubVI can also be run in stand-alone mode for testing by specifying a static image file to load from disk, provided no input image refnum is supplied.
+
+-----
+Structure:
+
+* Original Image tab:  Displays the image that is being used for the pixel to micron conversion.  
+
+If Refnum In is wired, the image displayed will be the input image.  This will ordinarily be wired to accept a single frame from the camera.
+
+If Refnum In is blank and File Path is valid, the VI will attempt to use the specified static image.  This is useful for unit testing and debugging.
+
+* FFT tab:  Displays the magnitude spectrum of a 2D fast fourier transform applied to the original image.  
+
+* Zoom tab:  Programmatically zooms in on the center of the 2D fast fourier transform.
+
+Image Zoom is set to 1.5x by default.  Higher zoom values can help if the objects need to be larger for the Find Objects step.  Lower zoom values can help to bring more objects into view, which can improve the Fit Line accuracy.
+
+* Capture FFT Spectrum tab:  Due to a peculiarity in LabVIEW, it is not possible to use Find Objects on a complex image.  To get around this, a screenshot is made of the image in the Zoom tab and saved to disk as a JPEG.
+
+Load as U8 tab:  The saved JPEG is then reloaded as a U8 image.
+
+
+* Find Objects tab:  Uses Find Objects to look for the characteristic dots created by the 2D FFT.
+
+Settings controls how Find Objects detects these dots.
+	Objects:				Set to Bright Objects by default.
+	Threshold: 				Set to 128 by default.
+	Ignore Objects touching Image Borders:	ON by default.
+	Fill Holes within Objects:		OFF by default.
+	Minimum Object Size:			ON by default, 2 pixels.
+	Maximum Object Size:			OFF by default, 100 pixels.
+	Show Search Area:			OFF by default.
+	Show Center:				ON by default.
+	Show Bounding Box:			ON by default.
+
+* Fit Line tab:  Attempts to get the best fit line to the set of objects detected by Find Objects.  This line is then used to calculate the skew angle and associated uncertainty.
+
+	Minimum Score:	Controls how perfect the line fit should be.  Set to 950 by default.
+	Pixel Radius:	Specifies the neighborhood pixel relationship for the initial subset 
+			of points being used.  Set to 2 by default.
+
+	Fit Line:	Displays the line fit.  This image is wired as an output.
+
+	Skew Angle (0 to 180 Degrees):	Returns an angle from the first and second quadrants.
+					These angles are wired as outputs.
+
+	Skew Angle (90 to -90 Degrees):	Returns an angle from the first and fourth quadrants.
+					These angles are wired as outputs.
+
+	Error:				Returns the associated uncertainties for each angle.
+					These errors are wired as outputs.
