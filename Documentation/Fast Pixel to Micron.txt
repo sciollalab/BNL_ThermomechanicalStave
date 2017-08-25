@@ -1,0 +1,69 @@
+FAST PIXEL TO MICRON
+Primary Author: Catherine Nicoloff (cnicolof@wellesley.edu)
+
+Core concept:  Using regular features found on the silicon modules, we can convert from a camera distance (pixels) to a real world distance (microns).
+
+-----
+Definitions: 
+
+Strips: Etched traces with a regular pitch of 74.5 microns (insert module type here) or (insert other module types here).
+
+-----
+Design Philosophy:  
+
+This VI should work correctly under normal conditions with little input or configuration from the user. 
+
+If necessary, this SubVI can be opened during operation to display several tabs of debugging information as well as editable parameters.
+
+This SubVI can also be run in stand-alone mode for testing by specifying a static image file to load from disk, provided no input image refnum is supplied.
+
+-----
+Structure:
+
+* Original Image tab:  Displays the image that is being used for the pixel to micron conversion.  
+
+If Refnum In is wired, the image displayed will be the input image.  This will ordinarily be wired to accept a single frame from the camera.
+
+If Refnum In is blank and File Path is valid, the VI will attempt to use the specified static image.  This is useful for unit testing and debugging.
+
+* Cropped Image tab:  Displays a square cropped region from the center of the given image.  The center of the image is chosen to reduce the influence of any systematic effects such as irregular lighting or spherical aberrations caused by the camera lens.
+
+Crop Size is set by default to 1000.  This can be changed by the end user if necessary.
+
+* Local Threshold tab:  Displays the cropped image region after processing and thresholding.
+
+Erosion + Dilation is OFF by default.  If enabled, it will perform an erosion followed by a dilation seven times.  This can be useful in some circumstances to reduce single pixel noise.
+
+Gaussian Blur is OFF by default.  The default kernel size for the blur is 3.  It can be set to 3, 5, or 7.  This can help clean up CCD noise before thresholding and reduce the uncertainty on the final value.
+
+* Skew Angle tab:  Displays the results of FFT Skew Detection, which is used to correct the pixel to micron conversion.  FFT Angle (Rad) and FFT Error (Rad) are wired as outputs.
+
+Use Threshold is ON by default.  This sends the image displayed in the Local Threshold tab to the skew detection VI.  Using the thresholded image generally results in more accurate skew detection.  If turned off, it will send the image displayed in the Cropped Image tab instead.
+
+* Strip Pitch Histogram tab:  Displays the results of the pixel to micron conversion.
+
+The histogram displays the distribution of detected strip pitches.
+
+Absolute Constraints are OFF by default.  Values beneath Min Value or above Max Value are discarded from the distribution.  Using these constraints judiciously can help improve the final conversion value and reduce the error on that calculation.
+
+Relative Constraints are ON by default, set to 3 standard deviations.  Values too far from the mean are discarded from the distribution to reduce the effect of outliers on the final value.
+
+Conversion Method is set to Signal Fit, Left to Right by default.
+
+	Signal Fit, Left to Right: 	Fastest and most accurate under a wide range of conditions.
+					Can handle skew angles up to 45 degrees.
+					Not heavily influenced by the presence of small irregularities.
+
+	Strip Centers:			Slower and less accurate.  Included as a cross-check.
+					Can handle skew angles up to 45 degrees.
+					Dust or other irregularities in the image can increase error.
+
+	Projection + Signal Fit:	Extremely fast.  Included as a cross-check.
+					Should not be used with heavily skewed images.
+					Does not return associated uncertainties (N=1)
+
+Strip Pitch is set to 74.5 microns by default.  This value is a wired input and can be changed according to module specifications.
+
+Microns/Pixel is the uncorrected pixel to micron conversion value along with its associated Error value.  These values are wired as outputs.
+
+Microns/Pixel (Corrected) is the pixel to micron conversion value after correction for the skew angle along with its associated Error value.  These values are wired as outputs.
