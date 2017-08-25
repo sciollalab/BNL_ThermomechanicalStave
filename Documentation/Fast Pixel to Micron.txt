@@ -1,3 +1,6 @@
+FAST PIXEL TO MICRON
+Primary Author: Catherine Nicoloff (cnicolof@wellesley.edu)
+
 Core concept:  Using regular features found on the silicon modules, we can convert from a camera distance (pixels) to a real world distance (microns).
 
 -----
@@ -63,4 +66,4 @@ Strip Pitch is set to 74.5 microns by default.  This value is a wired input and 
 
 Microns/Pixel is the uncorrected pixel to micron conversion value along with its associated Error value.  These values are wired as outputs.
 
-Corrected is the pixel to micron conversion value after correction for the skew angle along with its associated Error value.  These values are wired as outputs.
+Microns/Pixel (Corrected) is the pixel to micron conversion value after correction for the skew angle along with its associated Error value.  These values are wired as outputs.
