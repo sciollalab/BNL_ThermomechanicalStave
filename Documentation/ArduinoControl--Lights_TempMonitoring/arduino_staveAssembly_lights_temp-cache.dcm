@@ -1,0 +1,18 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP Single-wire-connection
+D wire connection
+K connection; wire connection; connector
+$ENDCMP
+#
+$CMP Single-wire-connection-female
+D wire connection
+K connection; wire connection; connector
+$ENDCMP
+#
+$CMP Single-wire-connection-male
+D wire connection
+K connection; wire connection; connector
+$ENDCMP
+#
+#End Doc Library

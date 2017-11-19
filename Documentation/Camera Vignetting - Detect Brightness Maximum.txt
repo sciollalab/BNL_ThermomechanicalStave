@@ -1,0 +1,44 @@
+DETECT BRIGHTNESS MAXIMUM
+Primary Author: Catherine Nicoloff (cnicolof@wellesley.edu)
+
+Core concept:  Using the brightest spot in the field of view and a progression of thresholds, attempt to determine whether the camera is aligned with a flat field of view.
+
+-----
+Design Philosophy:  
+
+This VI may require occasional configuration from the user for best performance.
+
+If necessary, this SubVI can be opened during operation to display several tabs of debugging information as well as editable parameters.
+
+This SubVI can also be run in stand-alone mode for testing by specifying a static image file to load from disk, provided no input image refnum is supplied.
+
+-----
+Structure:
+
+* Bright Spot Centering tab:  Displays the image from the camera, overlaid with crosshairs indicating the image center and a bullseye indicating the center of the brightest region in the image.  
+
+If Refnum In is wired, the image displayed will be the input image.  This will ordinarily be wired to accept a single frame from the camera.
+
+If Refnum In is blank and File Path is valid, the VI will attempt to use the specified static image.  This is useful for unit testing and debugging.
+
+	* Bullseye Color: The color of the bullseye overlay. 
+
+	* Center Color: The color of the center crosshair overlay. 
+
+* Progressive Threshold tab:  Displays the results of a progressive series of thresholds applied to the original image.
+
+	* Step Size: Set to 8 by default.  Step the threshold from image mean to Threshold Max by the given interval.
+
+	* Min. Objects:  Set to 250 by default.  The minimum number of objects necessary before attempting to fit an ellipse.
+
+	* Threshold Max:  Set to 255 by default.  The maximum threshold value to step to.  Use caution with this setting, as threshold values that are too high may create a false impression of misalignment.
+
+* Visualize Ellipses tab:  Displays the camera image and the full set of detected objects for each threshold step.
+
+	* Radius:  Set to 8 by default.  Radius of the overlay circles that mark the found objects.
+
+	* Draw Mode:  Set to Fill by default.  Options are Fill or Frame.  Whether to fill the overlay circles (default) or just draw the frame.
+
+	* Object Display:  Set to OFF (Fit) by default.  Options are Fit or All.  Draw just the objects used by the ellipse fit (Fit) or draw all the found objects (All).
+
+* Graphs tab:  Displays three graphs to show the evolution of ellipse eccentricity and ellipse center coordinates with increasing threshold values.
