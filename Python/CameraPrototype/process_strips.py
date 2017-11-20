@@ -3,7 +3,11 @@
 # ATLAS inner tracker stave core assembly
 #
 # June 16, 2017
-# Catherine Nicoloff
+# Catherine Nicoloff, Wellesley College
+# 
+# On behalf of Brandeis University and 
+# Brookhaven National Laboratory for the
+# ATLAS ITk upgrade.
 #---------------------------------------------
 
 import numpy as np
@@ -14,6 +18,14 @@ import os
 import sys
 import re
 import csv
+
+
+#---------------------------------------------
+# Make a directory if it doesn't exist
+#---------------------------------------------
+def make_dir(path):
+    os.makedirs(path, exist_ok=True)
+
 
 #---------------------------------------------
 # Check if the ROI is inside the edges of the 
@@ -164,6 +176,15 @@ def correct_angles(x, y, a):
 	return y
 
 
+#---------------------------------------------
+# Draw a box on a given image
+#---------------------------------------------		
+def draw_ROI(img, coords, color):
+    img_box = img.copy()
+    cv2.rectangle(img_box, (coords[2], coords[0]), (coords[3], coords[1]), color, 5)
+    return img_box
+	
+	
 #---------------------------------------------
 # Process the region of interest
 #---------------------------------------------		
