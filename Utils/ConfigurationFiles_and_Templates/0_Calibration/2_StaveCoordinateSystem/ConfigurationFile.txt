@@ -1,0 +1,7 @@
+-59.015,-10.1936 Zstop and Bustape Distance in x & y
+0,0,0 Two Bustape Dots Coordinate in stave origin. If user interested in using all the 7 bus tape dots this is where the coordinates should be and indexing in labview should be changed
+1127,0,0
+-5.712,-115.08 4 corners of the first module from z stop
+-9.591,-18.079
+89.691,-111.266
+85.812,-14.264
