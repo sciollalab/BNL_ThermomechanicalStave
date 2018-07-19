@@ -1,0 +1,166 @@
+<HTML>
+<HEAD>
+<TITLE>PythonWrapper.vi</TITLE>
+<META NAME="Author" CONTENT="">
+<META NAME="GENERATOR" CONTENT="G Development Environment">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+<A NAME="PythonWrapper.vi"></A><H2>PythonWrapper.vi</H2>
+<P>Allows for the passing of non-string data types to and from Python scripts.</P>
+<P><IMG SRC="PythonWrapperc.png" ALT="PythonWrapper.vi"></P>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cfxdt.png" ALT="cfxdt"></P>
+</TD>
+<TD>
+<B>data in</B> <P>Connect to <B>data in</B> a variant containing the argument(s) that will be passed to python. Python will receive a replica data structure of whatever is inside the variant passed to <B>data in</B>.</P>
+<P>Note that the following conversions will take place:</P>
+<P>	[x]-bit integer			-&gt;	numpy.int[x]</P>
+<P>	Unsigned [x]-bit integer		-&gt;	numpy.uint[x]</P>
+<P>	Single-Precision Floating-Point Number		 -&gt;	numpy.float32</P>
+<P>	Double-Precision Floating-Point Number		 -&gt;	numpy.floa64</P>
+<P>	Single-Precision Complex Floating-Point Number -&gt;	numpy.complex64</P>
+<P>	Double-Precision Complex Floating-Point Number-&gt;	numpy.complex128</P>
+<P>	Enumerated [x]-bit Integer	-&gt;	numpy.uint[x]</P>
+<P>	All Physical Quantities		-&gt;	same as their non-physical equivalent</P>
+<P>	Boolean			-&gt;	bool</P>
+<P>	String				-&gt;	str</P>
+<P>	Path				-&gt;	str</P>
+<P>	Array				-&gt;	numpy.ndarray</P>
+<P>	Cluster				-&gt;	list</P>
+<P>	Variant				-&gt;	&lt;LabviewPasser.variant&gt;</P>
+<P>Note that the following types are not yet supported:</P>
+<P>	All Extended-Precision types</P>
+<P>	Picture</P>
+<P>	Waveform</P>
+<P>	Refnum</P>
+<P>	All Fixed-Point types</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cu32.png" ALT="cu32"></P>
+</TD>
+<TD>
+<B>expected output size (4096)</B> <P>Use <B>expected output size</B> to improve memory efficiency. Use a number slightly larger than the output size you expect. The command runs if you exceed this size, but LabVIEW uses its memory less efficiently. The default is 4096.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cbool.png" ALT="cbool"></P>
+</TD>
+<TD>
+<B>run minimized? (T)</B> <P>If <B>run minimized?</B> is TRUE, the VI minimizes the run of your executable program. The default is TRUE.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>Python.exe</B> <P><B>Python.exe</B> stores the filepath to the file Python.exe located on your computer. If the location of this file is in your PC's environment path variable, entering &quot;Python&quot; in this field (the default value) is sufficient.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="cpath.png" ALT="cpath"></P>
+</TD>
+<TD>
+<B>file to run</B> <P><B>file to run</B> is the location of the python script that the <B>PythonWrapper.vi</B> will call.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>return code</B> <P><B>return code</B> indicates the exit code returned by python.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ierrcodeclst.png" ALT="ierrcodeclst"></P>
+</TD>
+<TD>
+<B>error out</B> <P><B>error out</B> contains error information. This output provides standard error out functionality.</P>
+</TD>
+</TR>
+</Table>
+<UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ibool.png" ALT="ibool"></P>
+</TD>
+<TD>
+<B>status</B> <P><B>status</B> is TRUE (X) if an error occurred or FALSE (checkmark) to indicate a warning or that no error occurred.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ii32.png" ALT="ii32"></P>
+</TD>
+<TD>
+<B>code</B> <P><B>code</B> is the error or warning code.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>source</B> <P><B>source</B> describes the origin of the error or warning and is, in most cases, the name of the node that produced the error or warning.</P>
+</TD>
+</TR>
+</Table>
+</UL>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="istr.png" ALT="istr"></P>
+</TD>
+<TD>
+<B>standard error</B> <P><B>standard error</B> returns runtime errors from inside the python script you called.</P>
+</TD>
+</TR>
+</Table>
+<Table>
+<TR valign=TOP>
+<TD>
+<P><IMG SRC="ifxdt.png" ALT="ifxdt"></P>
+</TD>
+<TD>
+<B>data out</B> <P><B>data out</B> is a variant containing the data structure returned by the python script specified in <B>file to run</B>. To access the data, use the &quot;Variant To Data&quot; VI.</P>
+<P>Note that all python &quot;int&quot; types are converted to 32-bit Integers, python &quot;float&quot; types to Double-Precision Floating-Point Numbers, and python &quot;complex&quot; types to Double-Precision Complex Floating-Point Numbers.</P>
+</TD>
+</TR>
+</Table>
+<P>&quot;PythonWrapper.vi History&quot;</P>
+<P>Current Revision:   28</P>
+<P>rev. 28 Tue, Jul 17, 2018 3:08:41 PM Joel</P>
+<P>Version: 1.0</P>
+<P>Runs on: LabVIEW 2016</P>
+<P>Version Release Date: 10 July, 2018</P>
+<P>Author: Joel Herman</P>
+<P></P>
+<P>Designed for use with 'LabviewPasser.py', version 1.0</P>
+<P>(For use with Python _._ and later)</P>
+</BODY>
+</HTML>
