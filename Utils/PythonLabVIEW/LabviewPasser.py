@@ -1,3 +1,4 @@
+# 
 # -------------- LabviewPasser 1.0 --------------
 #
 #        Joel Herman         July 11, 2018
@@ -8,6 +9,8 @@
 # All numeric types are converted to python's
 # closest equivalent (either a numpy type, list,
 # str, or numpy.ndarray), or a variant object.
+# 
+# ADD THIS FILE TO: Lib/site-packages/PythonLabVIEW
 # 
 # NOTE: This script is designed to work with PythonWrapper.vi version 1.0
 # Check VI version 
@@ -29,7 +32,10 @@
 # 	picture
 # 	waveform
 # 	refnum
-# 	
+# 
+# ######### COMPATIBILITY ##########
+# Python: 2.7-3.6  |  LabVIEW: 16-17
+# 
 # To learn more about labview data types and how
 # they are encoded by variant->flattenToString, visit
 # -> http://zone.ni.com/reference/en-XX/help/371361R-01/lvconcepts/type_descriptors/
@@ -46,7 +52,7 @@ from binascii import hexlify
 
 labviewVersion = 16			# Set this variable to match version of labview when not
 							# calling 'getFromLabview()' (where value is auto-detected).
-suppressPrinting = False 	# Only turn to False if running print tests. MUST be
+suppressPrinting = True 	# Only turn to False if running print tests. MUST be
 							# TRUE for code to work
 
 ############################# VARIANT CLASS ##############################
