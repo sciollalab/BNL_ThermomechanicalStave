@@ -1,0 +1,11 @@
+### Stave Configuration File ###
+# Format
+# X, Y distance between z-stop and first bus tape dots
+# X separation of first and last bus tape dots
+# X, Y separation of the four corners (A,B,C,D) of the first module from the z-stop
+-19.434, 9.7121
+1182.000
+-5.712, -115.081
+-9.591, -18.079
+89.691, -111.266
+85.812, -14.264
