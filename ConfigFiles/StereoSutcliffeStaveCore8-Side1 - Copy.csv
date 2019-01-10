@@ -1,0 +1,19 @@
+### Stave Configuration File ###
+# All distances are absolute
+# Each file is specific to one side of a given stave, the naming convention is as follows:
+#	side 1:
+#		RHS EoS, Tooling Pin Up
+#		LHS EoS, Tooling Pin Down
+#	side 2: 
+#		RHS EoS, Tooling Pin Down
+#		LHS EoS, Tooling Pin Up
+# Must enter separate lines in the following order:
+#	line 1: X, Y distance between z-stop and first bustape dot
+#	line 2: X distance between first and last bustape dots
+#	line 3-6: X, Y distance between the four corners of the first module and the z-stop (can be entered in any order)
+299.745, 0.289
+588.0481, 881.6904
+4.921, 17.390
+90.527, 14.908
+2.397, 114.440
+93.051, 111.955
