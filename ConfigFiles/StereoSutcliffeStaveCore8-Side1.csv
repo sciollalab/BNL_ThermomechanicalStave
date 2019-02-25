@@ -12,7 +12,7 @@
 #	line 2: X distance between first and last bustape dots
 #	line 3-6: X, Y distance between the four corners of the first module and the z-stop (can be entered in any order)
 298.507, 0.289
-293.4620, 587.4620, 881.4620
+881.4620
 4.921, 17.390
 90.527, 14.908
 2.397, 114.440
