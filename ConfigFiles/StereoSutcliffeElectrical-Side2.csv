@@ -4,13 +4,13 @@
 #	side 1:
 #		RHS EoS, Tooling Pin Up
 #		LHS EoS, Tooling Pin Down
-#	side 2: 
+#	side 2:
 #		RHS EoS, Tooling Pin Down
 #		LHS EoS, Tooling Pin Up
 # Must enter separate lines in the following order:
-#	line 1: X, Y distance between z-stop and first bustape dot
-#	line 2: X distance between first and last bustape dots
-#	line 3-6: X, Y distance between the four corners of the first module and the z-stop (can be entered in any order)
+#	line 1: X, Y distance between Sutcliffe z-stop origin and locally-defined origin
+#	line 2: X distance between consecutive calibration point(s) (bustape dots or tooling pins)
+#	line 3-6: X, Y distance between the four corners of the first module and the Sutcliffe z-stop origin (can be entered in any order)
 184.207, 10.734
 1128.000
 4.921, 17.390
