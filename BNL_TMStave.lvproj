@@ -181,10 +181,7 @@
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../../../sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.LabVIEW.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.LabVIEW.dll"/>
-			<Item Name="AnalyzeLineSpeed.vi" Type="VI" URL="../Glue/Utilities/AnalyzeLineSpeed.vi"/>
-			<Item Name="CalibrateStartPosition.vi" Type="VI" URL="../Glue/Utilities/CalibrateStartPosition.vi"/>
-			<Item Name="GetElapsedTime.vi" Type="VI" URL="../Glue/Utilities/GetElapsedTime.vi"/>
-			<Item Name="GlueRepeatedLinePattern.vi" Type="VI" URL="../Glue/GlueRepeatedLinePattern.vi"/>
+			<Item Name="Go2XYZ (SubVI).vi" Type="VI" URL="../1_ModulePlacement/1_GluePatterning/Glue/0_Calibration/0_XYZStage/Go2XYZ (SubVI).vi"/>
 			<Item Name="Go2XYZAndWait (SubVI).vi" Type="VI" URL="../0_Calibration/0_XYZStage/Go2XYZAndWait (SubVI).vi"/>
 			<Item Name="High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;).lvlib"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
@@ -201,11 +198,6 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Purge.vi" Type="VI" URL="../Glue/Utilities/Purge.vi"/>
-			<Item Name="ReadPattern.vi" Type="VI" URL="../Glue/Utilities/ReadPattern.vi"/>
-			<Item Name="RotateArrayCCW.vi" Type="VI" URL="../Glue/Utilities/RotateArrayCCW.vi"/>
-			<Item Name="ScaleXAndRotateArray.vi" Type="VI" URL="../Glue/Utilities/ScaleXAndRotateArray.vi"/>
-			<Item Name="ScaleXCoordinate.vi" Type="VI" URL="../Glue/Utilities/ScaleXCoordinate.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
