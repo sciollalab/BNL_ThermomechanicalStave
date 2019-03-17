@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="16008000">
+<Project Type="Project" LVVersion="17008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
@@ -33,7 +33,6 @@
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Acquire Input Data.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/inputDevices.llb/Acquire Input Data.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
-				<Item Name="Channel Abort Instructions.ctl" Type="VI" URL="/&lt;vilib&gt;/ChannelSupport/Channel Abort Instructions.ctl"/>
 				<Item Name="Check Color Table Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Color Table Size.vi"/>
 				<Item Name="Check Data Size.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check Data Size.vi"/>
 				<Item Name="Check File Permissions.vi" Type="VI" URL="/&lt;vilib&gt;/picture/jpeg.llb/Check File Permissions.vi"/>
@@ -178,12 +177,15 @@
 				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
-			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
-			<Item Name="Aerotech.A3200.dll" Type="Document" URL="../../../../sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
-			<Item Name="Aerotech.A3200.LabVIEW.dll" Type="Document" URL="../../BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.LabVIEW.dll"/>
-			<Item Name="Go2XYZ (SubVI).vi" Type="VI" URL="../1_ModulePlacement/1_GluePatterning/Glue/0_Calibration/0_XYZStage/Go2XYZ (SubVI).vi"/>
+			<Item Name=")Channel.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/)Channel.vi"/>
+			<Item Name="_Read For Replicate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/_Read For Replicate.vi"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/Aerotech/Documents/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/Aerotech/Documents/BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
+			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNLStaveAssembly-Blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Go2XYZAndWait (SubVI).vi" Type="VI" URL="../0_Calibration/0_XYZStage/Go2XYZAndWait (SubVI).vi"/>
-			<Item Name="High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;).lvlib" Type="Library" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;).lvlib"/>
+			<Item Name="Init Signal.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/Abort Signal/Init Signal.vi"/>
+			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/Instantiate.vi"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvinput.dll" Type="Document" URL="/&lt;resource&gt;/lvinput.dll"/>
 			<Item Name="mscorlib" Type="VI" URL="mscorlib">
@@ -198,6 +200,8 @@
 			<Item Name="nivissvc.dll" Type="Document" URL="nivissvc.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Read.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/Read.vi"/>
+			<Item Name="Write.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/Write.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
