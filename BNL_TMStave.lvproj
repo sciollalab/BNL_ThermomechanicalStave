@@ -178,6 +178,7 @@
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 			</Item>
 			<Item Name=")Channel.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/)Channel.vi"/>
+			<Item Name="478e72719c32735e" Type="Document"/>
 			<Item Name="_Read For Replicate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/_Read For Replicate.vi"/>
 			<Item Name="Aerotech.A3200" Type="Document" URL="Aerotech.A3200">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -185,6 +186,7 @@
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/Aerotech/Documents/BNLStaveAssembly-blueprint/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNL_ThermomechanicalStave/AerotechLibraries/Bin/Aerotech.A3200.dll"/>
 			<Item Name="Aerotech.A3200.dll" Type="Document" URL="/C/Users/sciollalab/Documents/Brandeis-BNL/LabVIEW_Codes/BNLStaveAssembly-Blueprint/Bin/Aerotech.A3200.dll"/>
+			<Item Name="GetCurrentXYZPosition (SubVI).vi" Type="VI" URL="../0_Calibration/0_XYZStage/GetCurrentXYZPosition (SubVI).vi"/>
 			<Item Name="Go2XYZAndWait (SubVI).vi" Type="VI" URL="../0_Calibration/0_XYZStage/Go2XYZAndWait (SubVI).vi"/>
 			<Item Name="Init Signal.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/Abort Signal/Init Signal.vi"/>
 			<Item Name="Instantiate.vi" Type="VI" URL="/&lt;extravilib&gt;/ChannelInstances/High Speed Stream-c(i32,str,c(dbl,dbl),t&apos;IMAQ Image.ctl&apos;,t&apos;IMAQdx.ctl&apos;)/Instantiate.vi"/>
