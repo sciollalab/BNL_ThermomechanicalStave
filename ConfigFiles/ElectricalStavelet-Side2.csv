@@ -12,7 +12,7 @@
 #	line 2: X distance between consecutive calibration point(s) (bustape dots or tooling pins)
 #	line 3-6: X, Y distance between the four corners of the first module and the Sutcliffe z-stop origin (can be entered in any order)
 58.390, 9.7121
-1128.000
+1163.000 #1128 for bustape dots
 5.712, 115.081
 9.591, 18.079
 89.691, 111.266
