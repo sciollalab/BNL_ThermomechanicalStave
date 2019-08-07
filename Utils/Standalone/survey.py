@@ -85,9 +85,8 @@ class TheSurvey(object):
 
     # reads the file into the "lines" field
     def GetLines(self):
-        infile = open(self.infile,"r") # create object to scan the file (r means open file for reading)
-        self.lines = infile.readlines() # read the file
-        infile.close() # close the scanner
+        with open(self.infile) as f_in:
+            self.lines = list(filter(None, (line.rstrip() for line in f_in)))
 
     # gathers information about each corner from self.lines into self.corners (ordered dict)
     def GetCorners(self):
@@ -103,9 +102,9 @@ class TheSurvey(object):
                 indD = ind + 1
 
         self.corners = collections.OrderedDict()
-        self.corners['A'] = self.lines[indA : indB - 2] # save lines after corner A and before corner B in input file into ordered dictionary
-        self.corners['B'] = self.lines[indB : indC - 2]
-        self.corners['C'] = self.lines[indC : indD - 2]
+        self.corners['A'] = self.lines[indA : indB - 1] # save lines after corner A and before corner B in input file into ordered dictionary
+        self.corners['B'] = self.lines[indB : indC - 1]
+        self.corners['C'] = self.lines[indC : indD - 1]
         self.corners['D'] = self.lines[indD : ]
 
     def RenameStages(self):
