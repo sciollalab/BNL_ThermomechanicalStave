@@ -1,0 +1,22 @@
+### Stave Configuration File ###
+# All distances are absolute
+# Each file is specific to one side of a given stave, the naming convention is as follows:
+#	side 1 - SIDE J:
+#		RHS EoS, Tooling Pin Up
+#		LHS EoS, Tooling Pin Down
+#	side 2- SIDE L:
+#		RHS EoS, Tooling Pin Down
+#		LHS EoS, Tooling Pin Up
+# Must enter separate lines in the following order:
+#	line 1: X, Y distance between Sutcliffe z-stop origin and locally-defined origin
+#	line 2: X distance between consecutive calibration point(s) (bustape dots or tooling pins)
+#	line 3-6: X, Y distance between the four corners of the first module and the Sutcliffe z-stop origin (can be entered in any order)
+#
+# TO CHECK FIRST TWO LINES FOR NEW STAVE 9
+196.735, 9.5589
+784.2240
+7.325, 27.075
+90.071, 29.608
+87.525, 127.525
+9.871, 124.992
+
